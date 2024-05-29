@@ -6,18 +6,22 @@
 </head>
 <body>
   <h1>Product CRUD</h1>
-
-  <form id="add-product-form">
-    <h2>Add Product</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="price">Price:</label>
-    <input type="number" id="price" name="price" required step="0.01">
-    <label for="desc">Description:</label>
-    <input type="text" id="desc" name="desc" required>
-    <button type="submit">Add</button>
-  </form>
-
+  <div class="form-style">
+    <form id="add-product-form">
+      <h2 id="form-title">Add Product</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Name">
+      <label for="price">Price:</label>
+      <input type="number" id="price" name="price" required step="0.01" placeholder="Price">
+      <label for="description">Description:</label>
+      <input type="text" id="description" name="description" required placeholder="Description">
+      <div class="buttons-content">
+        <button type="submit" id="submit-button" class="submit-button">Add</button>
+        <button type="reset" class="clear-button">Clear</button>
+      </div>
+    </form>
+  </div>
+  
   <ul id="products"></ul>
 
   <script src="app.js"></script>
